@@ -93,6 +93,10 @@ namespace Hooks
 			if (auto exemplar = userSettings->copyExemplars.exemplars.FindClosest(a_alchemyItem)) {
 				a_alchemyItem->fullName = exemplar->name;
 				a_alchemyItem->model = exemplar->model;
+				a_alchemyItem->alternateTextures = exemplar->alternateTextures;
+				a_alchemyItem->numAlternateTextures = exemplar->numAlternateTextures;
+				a_alchemyItem->textures = exemplar->textures;
+				a_alchemyItem->numTextures = exemplar->numTextures;
 			}
 		}
 
